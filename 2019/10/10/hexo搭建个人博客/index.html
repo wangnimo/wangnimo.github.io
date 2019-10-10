@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>hexo搭建个人博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言其实平时自己写的文章并不多，偶尔看到一些东西会做点笔记，但是每次写的东西都会到处放，不好找，所以才想着自己搭建一个人博客网站，现在大家用hexo比较多，也比较方便，并且能使用的主题也很多，所以小花就用她啦~ 本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成S">
+  <meta name="description" content="本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成SSH并添加到github部署项目上传到github绑定个人域名修改及配置主题写文章部分耍起来 1. 安装Git Bash 我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。  下载地址安装步骤：双击下载好的exe文件，一路n">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2019/10/10/hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前言其实平时自己写的文章并不多，偶尔看到一些东西会做点笔记，但是每次写的东西都会到处放，不好找，所以才想着自己搭建一个人博客网站，现在大家用hexo比较多，也比较方便，并且能使用的主题也很多，所以小花就用她啦~ 本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成S">
+<meta property="og:description" content="本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成SSH并添加到github部署项目上传到github绑定个人域名修改及配置主题写文章部分耍起来 1. 安装Git Bash 我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。  下载地址安装步骤：双击下载好的exe文件，一路n">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-10T14:12:39.816Z">
+<meta property="og:updated_time" content="2019-10-10T15:22:57.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建个人博客">
-<meta name="twitter:description" content="前言其实平时自己写的文章并不多，偶尔看到一些东西会做点笔记，但是每次写的东西都会到处放，不好找，所以才想着自己搭建一个人博客网站，现在大家用hexo比较多，也比较方便，并且能使用的主题也很多，所以小花就用她啦~ 本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成S">
+<meta name="twitter:description" content="本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成SSH并添加到github部署项目上传到github绑定个人域名修改及配置主题写文章部分耍起来 1. 安装Git Bash 我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。  下载地址安装步骤：双击下载好的exe文件，一路n">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -174,43 +174,66 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前言<br>其实平时自己写的文章并不多，偶尔看到一些东西会做点笔记，但是每次写的东西都会到处放，不好找，所以才想着自己搭建一个人博客网站，现在大家用hexo比较多，也比较方便，并且能使用的主题也很多，所以小花就用她啦~</p>
-<p>本篇为从零开始的基础篇，其他SEO、评论系统、统计等请看Hexo博客添加SEO-评论系统-阅读统计-站长统计，本篇所包含的内容如下：</p>
-<p>安装Git Bash<br>安装NodeJs<br>安装hexo<br>生成SSH并添加到github<br>部署项目<br>上传到github<br>绑定个人域名<br>修改及配置主题<br>添加RSS<br>添加评论<br>写文章部分<br>耍起来<br>由于小花的电脑在搭建博客之前就有了各种环境，但是对于没有任何基础的人来讲，我觉得还是从源头开始讲会好一点，就像教别人做菜，总得把所有的用料及步骤说清楚对吧？（大佬们可以自动忽略啊啊啊啊~）</p>
-<ol>
-<li>安装Git Bash<br>我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。</li>
-</ol>
-<p>下载地址<br>安装步骤：双击下载好的exe文件，一路next就好啦<br>安装好后，打开gitbash，查看版本：<br>命令：git version (写这篇博客的时候最新版本：2.12.2)<br>git version<br>然后你就可以在这里发挥你的聪明才智了<br>2. 安装NodeJs<br>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧</p>
-<p>下载地址(说明：LTS为长期支持版，Current为当前最新版)<br>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。<br>查看版本：<br>命令：node -v<br>node-version<br>又到自由发挥的时候了<br>3. 安装hexo<br>看到这么多安装，千万不要紧张，小哥哥小姐姐们一定要稳住，别怕，因为后面的东西都是在gitbash中用npm工具安装就好了。</p>
-<p>先创建一个文件夹（用来存放所有blog的东西），然后cd到该文件夹下。<br>安装hexo命令：npm i -g hexo<br>安装完成后，查看版本：</p>
-<p>npm-v</p>
-<p>初始化命令：hexo init ，初始化完成之后打开所在的文件夹可以看到以下文件：</p>
-<p>myblog</p>
+        <p><b>本篇所包含的内容如下：</b></p>
+<p>安装Git Bash<br>安装NodeJs<br>安装hexo<br>生成SSH并添加到github<br>部署项目<br>上传到github<br>绑定个人域名<br>修改及配置主题<br>写文章部分<br>耍起来</p>
+<li><b>1. 安装Git Bash</b></li>
+我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。
+
+<p>下载地址<br>安装步骤：双击下载好的exe文件，一路next就好啦<br>安装好后，打开gitbash，查看版本：<br>命令：git version<br>然后你就可以在这里发挥你的聪明才智了</p>
+<li><b>2. 安装NodeJs</b></li>
+Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧
+
+<p>下载地址(说明：LTS为长期支持版，Current为当前最新版)<br>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。<br>查看版本：<br>命令：node -v<br>node-version<br>又到自由发挥的时候了</p>
+<li><b>3. 安装hexo</b></li>
+看到这么多安装，千万不要紧张，小哥哥小姐姐们一定要稳住，别怕，因为后面的东西都是在gitbash中用npm工具安装就好了。
+
+<p>先创建一个文件夹（用来存放所有blog的东西），然后cd到该文件夹下。<br>安装hexo命令：npm i -g hexo<br>安装完成后，查看版本：npm-v</p>
+<p>初始化命令：hexo init </p>
 <p>解释一下：<br>node_modules：是依赖包<br>public：存放的是生成的页面<br>scaffolds：命令生成文章等的模板<br>source：用命令创建的各种文章<br>themes：主题<br>_config.yml：整个博客的配置<br>db.json：source解析所得到的<br>package.json：项目所需模块项目的配置信息<br>做好这些前置工作之后接下来的就是各种配配配置了。</p>
-<ol start="4">
-<li>搭桥到github<br>没账号的创建账号，有账号的看下面。<br>创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：<br>new-repo<br>create-repo</li>
-</ol>
+<li><b>4. 搭桥到github</b></li>
+没账号的创建账号，有账号的看下面。
+创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：
+new-repo
+create-repo
+
 <p>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己的）：<br>username<br>email</p>
-<p>创建SSH<br>在gitbash中输入：ssh-keygen -t rsa -C “<a href="mailto:youremail@example.com" target="_blank" rel="noopener">youremail@example.com</a>，生成ssh。然后按下图的方式找到id_rsa.pub文件的内容。<br>ssh-key</p>
-<p>将上面获取的ssh放到github中：<br>settings<br>ssh-key<br>添加一个 New SSH key ，title随便取，key就填刚刚那一段。</p>
-<p>在gitbash中验证是否添加成功：ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
-<p>完成下一步你就成功啦！</p>
-<ol start="5">
-<li>一步之遥<br>用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：<br>deploy:<br>type: git<br>repo: <a href="https://github.com/YourgithubName/YourgithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourgithubName/YourgithubName.github.io.git</a><br>branch: master<br>回到gitbash中，进入你的blog目录，分别执行以下命令：<br>hexo clean<br>hexo generate<br>hexo server<br>注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。</li>
-</ol>
+<li><b>5. 一步之遥</b></li>
+用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：
+deploy:
+  type: git
+  repo: https://github.com/YourgithubName/YourgithubName.github.io.git
+  branch: master
+回到gitbash中，进入你的blog目录，分别执行以下命令：
+hexo clean
+hexo generate
+hexo server
+注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。
+
 <p>打开浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
 <p>接着你就可以遇见天使的微笑了~</p>
-<ol start="6">
-<li>上传到github<br>先安装一波：npm install hexo-deployer-git –save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）<br>执行命令(建议每次都按照如下步骤部署)：<br>hexo clean<br>hexo generate<br>hexo deploy<br>注意deploy的过程中要输入你的username及passward。如下：</li>
-</ol>
-<p>deploy</p>
-<p>在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="noopener">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a><br>感觉gitbash中东西太多的时候输入clear命令清空。<br>7. 绑定个人域名<br>不想绑定的自行忽略<br>第一步购买域名：随便在哪个网站买一个就好了，小花是在阿里云购买的visugar.com, DNS也是顺道在那买的。<br>第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是visugar.com，只能添加一个哦。<br>到DNS中添加一条记录：<br>dns-note<br>其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：<br>github-ip<br>接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦~<br>8. 修改及配置主题<br>hexo初始化之后默认的主题是landscape , 然后你可以去这个地址里面找到你想要的主题。在github中搜索你要的主题名称，里面都会有该主题的如何使用的介绍，按着来就好了，反正就是改改改！我选的是hueman,看起来挺不错，至少是我喜欢的类型。<br>themes</p>
-<p>跟该主题相关的配置在themes/hueman/_config.yml里面,然后根据你的需要在这配配配就行了。<br>themes-config</p>
-<p>有的东西我也不知道是啥玩意儿，你要多试多倒腾几次，就能意会啦<br>下面是针对我所选的主题的两小点(别的主题我没看，可能也是类似):</p>
-<p>在导航栏添加点东西<br>例如我添加了一个更新日志的模块。<br>在主题的配置文件中，menu添加一栏：Board: /board。<br>然后在source中添加一个board，即对应上面的名字。然后再创建一个index.md，里面可以写你想写的内容。<br>在主题的hueman/langulages/zh-CN.yml中的index适当的位置加：board: ‘更新日志’，位置和名字是你自己设定。<br>重新部署，然后就OK了<br>在侧边栏添加点东西<br>回到你的主题的配置文件中，找到widgets一栏，在你要添加的位置处添加一条你自定义的名称。例如我的叫communiation且放在了第二行。<br>在上面所提到的zh-CN.yml文件中找到sidebar一栏，添加communiation: ‘你要设的名称’。<br>在hueman/layout/widget中添加一个communiation.ejs,填入模板<br>&lt;% if (site.posts.length) { %&gt;<br>    <div class="widget-wrap widget-list"><br>        <h3 class="widget-title">&lt;%= __(‘sidebar.communiation’) %&gt;</h3><br>        <div class="widget"><br>            <!--这里添加你要写的内容--><br>        </div><br>    </div><br>&lt;% } %&gt;<br>9. 添加RSS<br>先安装rss相关插件：npm i hexo-generator-feed<br>在你的项目的_config.yml配置文件下找到Extensions添加如下内容：</p>
-<h1 id="Extensions-插件和主题-Plugins-https-hexo-io-plugins-Themes-https-hexo-io-themes-RSS订阅-plugin-hexo-generator-feed-Feed-Atom-feed-type-atom-path-atom-xml-limit-20"><a href="#Extensions-插件和主题-Plugins-https-hexo-io-plugins-Themes-https-hexo-io-themes-RSS订阅-plugin-hexo-generator-feed-Feed-Atom-feed-type-atom-path-atom-xml-limit-20" class="headerlink" title="Extensions #插件和主题 ## Plugins: https://hexo.io/plugins/ ## Themes: https://hexo.io/themes/ #RSS订阅 plugin: - hexo-generator-feed #Feed Atom feed: type: atom path: atom.xml limit: 20"></a>Extensions #插件和主题 ## Plugins: <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">https://hexo.io/plugins/</a> ## Themes: <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a> #RSS订阅 plugin: - hexo-generator-feed #Feed Atom feed: type: atom path: atom.xml limit: 20</h1><p>进入到你的主题的配置文件下，找到你的放rss的位置，添加/atom.xml即可。<br>重新部署再打开就能看到效果啦~<br>10. 添加评论<br>先选一个你要使用的第三方评论系统，最好找个靠谱点的（我使用的是网易云跟帖）。<br>在主题的配置文件下找到comment，添加一行，例如我添加的是yungentie: 此处自由发挥<br>注册完评论系统后获取相应的代码，然后在主题的layout下找到comment新建一个ejs模板文件，名称自定义。<br>yungentie</p>
-<p>找到你的article.ejs模板文件，加上&lt;%- partial(‘comment/你刚刚取得名字’) %&gt;保存。<br>重新部署，OK啦<br>11. 写文章部分<br>新建文章：hexo new ‘文章名’，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。<br>关于具体的文章编辑你可以看下官网的介绍<br>至于markdown，可以自行发挥啦~</p>
+<li><b>6. 上传到github</b></li>
+先安装一波：npm install hexo-deployer-git --save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）
+执行命令(建议每次都按照如下步骤部署)：
+hexo clean
+hexo generate
+hexo deploy
+注意deploy的过程中要输入你的username及passward。
 
+<p>在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="noopener">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a><br>感觉gitbash中东西太多的时候输入clear命令清空。</p>
+<li><b>7. 绑定个人域名</b></li>
+不想绑定的自行忽略
+第一步购买域名：随便在哪个网站买一个就好了，小花是在阿里云购买的visugar.com, DNS也是顺道在那买的。
+第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是visugar.com，只能添加一个哦。
+到DNS中添加一条记录：
+dns-note
+其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：
+github-ip
+接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦~
+
+<li><b>8. 写文章部分</b></li>
+新建文章：hexo new '文章名'，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。
+关于具体的文章编辑你可以看下官网的介绍
+至于markdown，可以自行发挥啦~
       
 
       
@@ -301,6 +324,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2019/10/10/发布博客内容/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          发布博客内容
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
