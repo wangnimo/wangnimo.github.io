@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>six</title>
+  <title>hexo搭建个人博客 | six</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="six">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成SSH并添加到github部署项目上传到github绑定个人域名写文章部分耍起来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建个人博客">
+<meta property="og:url" content="http://yoursite.com/2019/10/10/hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="six">
+<meta property="og:description" content="本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成SSH并添加到github部署项目上传到github绑定个人域名写文章部分耍起来">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-11T03:39:04.209Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="six">
+<meta name="twitter:title" content="hexo搭建个人博客">
+<meta name="twitter:description" content="本篇所包含的内容如下： 安装Git Bash安装NodeJs安装hexo生成SSH并添加到github部署项目上传到github绑定个人域名写文章部分耍起来">
   
     <link rel="alternative" href="/atom.xml" title="six" type="application/atom+xml">
   
@@ -150,90 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-发布博客内容" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-hexo搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/10/发布博客内容/">发布博客内容</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/10/发布博客内容/" class="archive-article-date">
-  	<time datetime="2019-10-10T15:24:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <li><b>1、创建博客标题</b></li>
-hexo new "post title with whitespace"
-
-<li><b>2、编写博客内容</b></li>
-找到创建的md文件，使用编辑器打开，按照Markdown的格式，编写博客内容，编写完成之后，执行以下代码，将博客内容推送到远程服务器上。
-hexo generate   //生成静态文件
-cp -R public/* .deploy/fang235.github.io  //复制文件
-cd .deploy/fang235.github.io //切换目录
-git add .  //将需要提交的代码添加到暂存区
-git commit -m “update” //将暂存区内容提交给本地版本库
-git push //推送给远程服务器
-提交到github之后，进行刷新即可。
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/10/发布博客内容/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/10/hexo搭建个人博客/">hexo搭建个人博客</a>
+    <h1 class="article-title" itemprop="name">
+      hexo搭建个人博客
     </h1>
   
 
@@ -247,12 +175,88 @@ git push //推送给远程服务器
     <div class="article-entry" itemprop="articleBody">
       
         <p><b>本篇所包含的内容如下：</b></p>
-<p>安装Git Bash<br>安装NodeJs<br>安装hexo<br>生成SSH并添加到github<br>部署项目<br>上传到github<br>绑定个人域名<br>写文章部分<br>耍起来
-        
-          <a class="article-more-a" href="/2019/10/10/hexo搭建个人博客/#more">more >></a>
-        
+<p>安装Git Bash<br>安装NodeJs<br>安装hexo<br>生成SSH并添加到github<br>部署项目<br>上传到github<br>绑定个人域名<br>写文章部分<br>耍起来<a id="more"></a></p>
+<li><b>1. 安装Git Bash</b></li>
+我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。
+
+<p>下载地址<br>安装步骤：双击下载好的exe文件，一路next就好啦<br>安装好后，打开gitbash，查看版本：<br>命令：git version<br>然后你就可以在这里发挥你的聪明才智了</p>
+<li><b>2. 安装NodeJs</b></li>
+Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧
+
+<p>下载地址(说明：LTS为长期支持版，Current为当前最新版)<br>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。<br>查看版本：<br>命令：node -v<br>node-version<br>又到自由发挥的时候了</p>
+<li><b>3. 安装hexo</b></li>
+看到这么多安装，千万不要紧张，小哥哥小姐姐们一定要稳住，别怕，因为后面的东西都是在gitbash中用npm工具安装就好了。
+
+<p>先创建一个文件夹（用来存放所有blog的东西），然后cd到该文件夹下。<br>安装hexo命令：npm i -g hexo<br>安装完成后，查看版本：npm-v</p>
+<p>初始化命令：hexo init </p>
+<p>解释一下：<br>node_modules：是依赖包<br>public：存放的是生成的页面<br>scaffolds：命令生成文章等的模板<br>source：用命令创建的各种文章<br>themes：主题<br>_config.yml：整个博客的配置<br>db.json：source解析所得到的<br>package.json：项目所需模块项目的配置信息<br>做好这些前置工作之后接下来的就是各种配配配置了。</p>
+<li><b>4. 搭桥到github</b></li>
+没账号的创建账号，有账号的看下面。
+创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：
+new-repo
+create-repo
+
+<p>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己的）：<br>username<br>email</p>
+<li><b>5. 一步之遥</b></li>
+用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：
+deploy:
+  type: git
+  repo: https://github.com/YourgithubName/YourgithubName.github.io.git
+  branch: master
+回到gitbash中，进入你的blog目录，分别执行以下命令：
+hexo clean
+hexo generate
+hexo server
+注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。
+
+<p>打开浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+<p>接着你就可以遇见天使的微笑了~</p>
+<li><b>6. 上传到github</b></li>
+先安装一波：npm install hexo-deployer-git --save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）
+执行命令(建议每次都按照如下步骤部署)：
+hexo clean
+hexo generate
+hexo deploy
+注意deploy的过程中要输入你的username及passward。
+
+<p>在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="noopener">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a><br>感觉gitbash中东西太多的时候输入clear命令清空。</p>
+<li><b>7. 绑定个人域名</b></li>
+不想绑定的自行忽略
+第一步购买域名：随便在哪个网站买一个就好了，小花是在阿里云购买的visugar.com, DNS也是顺道在那买的。
+第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是visugar.com，只能添加一个哦。
+到DNS中添加一条记录：
+dns-note
+其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：
+github-ip
+接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦~
+
+<li><b>8. 写文章部分</b></li>
+新建文章：hexo new '文章名'，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。
+关于具体的文章编辑你可以看下官网的介绍
+至于markdown，可以自行发挥啦~
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -261,16 +265,79 @@ git push //推送给远程服务器
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/10/hexo搭建个人博客/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/10/hexo搭建个人博客/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/10/10/发布博客内容/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          发布博客内容
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -285,13 +352,32 @@ git push //推送给远程服务器
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -314,8 +400,8 @@ git push //推送给远程服务器
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
