@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>six</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="six">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="six">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="six">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="six" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -46,7 +46,7 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">隔壁王尼莫</a></h1>
 		</hgroup>
 		
 
@@ -104,7 +104,7 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">隔壁王尼莫</h1>
 			</hgroup>
 			
 			
@@ -247,65 +247,10 @@ git push //推送给远程服务器
     <div class="article-entry" itemprop="articleBody">
       
         <p><b>本篇所包含的内容如下：</b></p>
-<p>安装Git Bash<br>安装NodeJs<br>安装hexo<br>生成SSH并添加到github<br>部署项目<br>上传到github<br>绑定个人域名<br>修改及配置主题<br>写文章部分<br>耍起来</p>
-<li><b>1. 安装Git Bash</b></li>
-我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。
-
-<p>下载地址<br>安装步骤：双击下载好的exe文件，一路next就好啦<br>安装好后，打开gitbash，查看版本：<br>命令：git version<br>然后你就可以在这里发挥你的聪明才智了</p>
-<li><b>2. 安装NodeJs</b></li>
-Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧
-
-<p>下载地址(说明：LTS为长期支持版，Current为当前最新版)<br>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 Add to PATH ,这样你就不用自己去配置电脑上环境变量了，装完在按 win + r 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。<br>查看版本：<br>命令：node -v<br>node-version<br>又到自由发挥的时候了</p>
-<li><b>3. 安装hexo</b></li>
-看到这么多安装，千万不要紧张，小哥哥小姐姐们一定要稳住，别怕，因为后面的东西都是在gitbash中用npm工具安装就好了。
-
-<p>先创建一个文件夹（用来存放所有blog的东西），然后cd到该文件夹下。<br>安装hexo命令：npm i -g hexo<br>安装完成后，查看版本：npm-v</p>
-<p>初始化命令：hexo init </p>
-<p>解释一下：<br>node_modules：是依赖包<br>public：存放的是生成的页面<br>scaffolds：命令生成文章等的模板<br>source：用命令创建的各种文章<br>themes：主题<br>_config.yml：整个博客的配置<br>db.json：source解析所得到的<br>package.json：项目所需模块项目的配置信息<br>做好这些前置工作之后接下来的就是各种配配配置了。</p>
-<li><b>4. 搭桥到github</b></li>
-没账号的创建账号，有账号的看下面。
-创建一个repo，名称为yourname.github.io, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：
-new-repo
-create-repo
-
-<p>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己的）：<br>username<br>email</p>
-<li><b>5. 一步之遥</b></li>
-用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：
-deploy:
-  type: git
-  repo: https://github.com/YourgithubName/YourgithubName.github.io.git
-  branch: master
-回到gitbash中，进入你的blog目录，分别执行以下命令：
-hexo clean
-hexo generate
-hexo server
-注：hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server。
-
-<p>打开浏览器输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
-<p>接着你就可以遇见天使的微笑了~</p>
-<li><b>6. 上传到github</b></li>
-先安装一波：npm install hexo-deployer-git --save（这样才能将你写好的文章部署到github服务器上并让别人浏览到）
-执行命令(建议每次都按照如下步骤部署)：
-hexo clean
-hexo generate
-hexo deploy
-注意deploy的过程中要输入你的username及passward。
-
-<p>在浏览器中输入<a href="http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！" target="_blank" rel="noopener">http://yourgithubname.github.io就可以看到你的个人博客啦，是不是很兴奋！</a><br>感觉gitbash中东西太多的时候输入clear命令清空。</p>
-<li><b>7. 绑定个人域名</b></li>
-不想绑定的自行忽略
-第一步购买域名：随便在哪个网站买一个就好了，小花是在阿里云购买的visugar.com, DNS也是顺道在那买的。
-第二步添加CNAME：在项目的source文件夹下新建一个名为CNAME的文件，在里面添加你购买的域名，比如我添加的是visugar.com，只能添加一个哦。
-到DNS中添加一条记录：
-dns-note
-其中ip地址为你的github的地址，可在cmd中ping一下就能看到(ping yourname.github.io)：
-github-ip
-接着再次部署一下，用你购买的域名打开，就可以看到你的博客啦~
-
-<li><b>8. 写文章部分</b></li>
-新建文章：hexo new '文章名'，然后你就可以在source/_posts路径下看到你创建的文章啦，编辑完成之后按照前面说的方式部署，在浏览器刷新就能看到你的文章了。
-关于具体的文章编辑你可以看下官网的介绍
-至于markdown，可以自行发挥啦~
+<p>安装Git Bash<br>安装NodeJs<br>安装hexo<br>生成SSH并添加到github<br>部署项目<br>上传到github<br>绑定个人域名<br>写文章部分<br>耍起来
+        
+          <a class="article-more-a" href="/2019/10/10/hexo搭建个人博客/#more">more >></a>
+        
       
 
       
@@ -357,7 +302,7 @@ github-ip
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 John Doe
+    		&copy; 2019 隔壁王尼莫
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
