@@ -172,21 +172,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-
-<h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><p>1 把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></p>
-<p>2 在你的hexo目录下执行这样一句话<code>npm install hexo-asset-image --save</code>，这是下载安装一个可以上传本地图片的插件，来自dalao：<a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">dalao的git</a></p>
-<p>3 等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个同名的文件夹</p>
-<p>4 最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![你想输入的替代文字](xxxx/图片名.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>注意： xxxx是这个md文件的名字，也是同名文件夹的名字。只需要有文件夹名字即可，不需要有什么绝对路径。你想引入的图片就只需要放入xxxx这个文件夹内就好了，很像引用相对路径。</p>
-<p>5 最后检查一下，<code>hexo g</code>生成页面后，进入<code>public\2017\02\26\index.html</code>文件中查看相关字段，可以发现，html标签内的语句是<code>&lt;img src=&quot;2017/02/26/xxxx/图片名.jpg&quot;&gt;</code>，而不是<code>&lt;img src=&quot;xxxx/图片名.jpg&gt;</code>。这很重要，关乎你的网页是否可以真正加载你想插入的图片。</p>
-<h2 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h2><p>本地source中建立img文件夹</p>
-<p>&lt;img src=”img/图片名.jpg&gt;</p>
-<p>这个比较方便</p>
-<h2 id="Third"><a href="#Third" class="headerlink" title="Third"></a>Third</h2><p>图床，不太稳定。</p>
-
+        <h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2>
+        
+          <a class="article-more-a" href="/2019/10/15/hexo中添加图片/#more">more >></a>
+        
       
 
       
@@ -259,17 +248,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-
-<p><strong>1、创建博客标题</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;post title with whitespace&quot;</span><br></pre></td></tr></table></figure>
-
-<p><strong>2、编写博客内容</strong></p>
-<p>找到创建的md文件，使用编辑器打开，按照Markdown的格式，编写博客内容，编写完成之后，执行以下代码，将博客内容推送到远程服务器上。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo generate   //生成静态文件</span><br><span class="line">cp -R public/* .deploy/fang235.github.io  //复制文件</span><br><span class="line">cd .deploy/fang235.github.io //切换目录</span><br><span class="line">git add .  //将需要提交的代码添加到暂存区</span><br><span class="line">git commit -m “update” //将暂存区内容提交给本地版本库</span><br><span class="line">git push //推送给远程服务器</span><br></pre></td></tr></table></figure>
-
-<p>提交到github之后，进行刷新即可。</p>
-
+        <p><strong>1&#x3001;&#x521B;&#x5EFA;&#x535A;&#x5BA2;&#x6807;&#x9898;</strong></p>
+        
+          <a class="article-more-a" href="/2019/10/10/发布博客内容/#more">more >></a>
+        
       
 
       
@@ -342,86 +324,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-
-<p><strong>大致过程分为：</strong></p>
-<p>[TOC]</p>
-<p>下面大致讲一下每个步骤：</p>
-<hr>
-<h6 id="1-搭建Node-js-环境"><a href="#1-搭建Node-js-环境" class="headerlink" title="1.搭建Node.js 环境:"></a>1.搭建Node.js 环境:</h6><p>　　Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。</p>
-<p>　　Node.js 是一个事件驱动 I/O 服务端JavaScript环境，基于Google的V8引擎，V8引擎执行JavaScript的速度非常快，性能非常好，而Hexo就是一款基于Node.js的静态博客框架，通过Node.js来生成静态的Web页面。</p>
-<p>　　Node.js的官方网站如下：</p>
-<p>　　<strong>中文网站：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a></strong></p>
-<p>　　<strong>英文网站： <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></strong></p>
-<h6 id="2-搭建Git-环境"><a href="#2-搭建Git-环境" class="headerlink" title="2.搭建Git 环境:"></a>2.搭建Git 环境:</h6><p>　  Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br>　　安装Git用途其实也就是把本地的Hexo内容（既静态的Web网站）提交到github或者Coding net等其他的代码托管站点上。　　</p>
-<p><strong>Git的官网下载地址为：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></strong></p>
-<h6 id="3-安装配置Hexo"><a href="#3-安装配置Hexo" class="headerlink" title="3.安装配置Hexo:"></a>3.安装配置Hexo:</h6><p>　　<strong>Hexo的官网地址为</strong>：<a href="https://hexo.io/zh-cn" target="_blank" rel="noopener">https://hexo.io/zh-cn</a><br>　　网站中有详细的介绍和说明，大家可以访问此网站进行详细的了解。<br>　　Node.js和Git都安装好后,即可开始安装Hexo<br>　　安装Hexo很简单只需一条命令即可，不管你是在CMD命令行中执行，还是右键选择Git Bash Here进入来执行都可以。<br>　　在命令行中输入：</p>
-<p> 　　</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<p><strong>创建站点:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;根文件夹名&gt;</span><br></pre></td></tr></table></figure>
-
-<p><strong>下载依赖:（很熟悉的一步了吧）</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p><strong>运行：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>　</p>
-<p>　<strong>出现提示：</strong> <strong>Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></strong><br>　<strong>在浏览器输入该地址，即可预览效果。</strong></p>
-<p><strong>、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、</strong></p>
-<p><strong>此时只是在本地创建好了站点并生成了静态页面，下面我们就需要在GitHub上创建代码库，并将本地的代码上传到GitHub上。</strong></p>
-<p><strong>、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、</strong></p>
-<h6 id="4-GitHub-注册和配置"><a href="#4-GitHub-注册和配置" class="headerlink" title="4.GitHub 注册和配置:"></a>4.GitHub 注册和配置:</h6><p>　　GitHub 是一个代码托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。　　<strong>Github官网地址为：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></strong></p>
-<p>创建代码库</p>
-<p>　　注册完成，登陆之后，点击页面右上角的加号，选择New repository：</p>
-<p> 　　<img src="img/1.png" alt="img"></p>
-<p>　　——————————————————————————-点击之后出现下图———————————————————————–</p>
-<p>　　<img src="img/2.png" alt="img"></p>
-<blockquote>
-<p>　　　注意：这里填入的wangnimo.github.io是我已经用过的，成功就会出现对号，<strong>如果你的名字是wangnimo，那你就填wangnimo.github.io</strong></p>
-</blockquote>
-<p> 　　</p>
-<h6 id="5-与github建立联系"><a href="#5-与github建立联系" class="headerlink" title="5.与github建立联系:"></a>5.与github建立联系:</h6><p>　　我们如何让本地git项目与远程的github建立联系呢？用 SSH keys<br>　　 <strong>生成SSH keys</strong></p>
-<p>　　　　在命令行中使用如下命令输入你自己的邮箱地址（不管你是在CMD命令行中执行，还是右键选择Git Bash Here进入来执行都可以）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxx@qq.com&quot;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>　　在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入，我们按回车不设置密码。</p>
-<p>　　<strong>添加 SSH Key 到 GitHub</strong></p>
-<p>　　　　打开 C:\Users.ssh\id_rsa.pub，此文件里面内容为刚才生成的密钥，准确的复制这个文件里的内容，粘贴到 <a href="https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a> 的 new SSH key 中</p>
-<p>　　 <strong>测试是否添加成功</strong><br>　　　　可以输入下面的命令，看看设置是否成功，<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>的部分不要修改：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<p>　　　　—–这里会让输入yes or no 输入yes 就好了</p>
-<p>　　　　出现 ： Hi name! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
-<p>　　<strong>配置Git个人信息</strong></p>
-<p>　　　　</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`git config --global user.name ``&quot;xxxxx&quot;``git config --global user.email ``&quot;xxxxx@qq.com&quot;`</span><br></pre></td></tr></table></figure>
-
-<p>　　<strong>配置 Deployment</strong></p>
-<p>　　　　在<code>_config.yml</code>文件中(此文件在你创建好的Hexo站点目录中)，找到<code>Deployment</code>，然后按照如下修改，用户名改成你自己的GitHub信息：</p>
-<p>　　　　</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:xian521/xian521.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-
-
-<p>　　<strong>本地文件提交到GitHub</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 删除旧的 public 文件</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">// 生成新的 public 文件</span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line">// 开始部署</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p> 如果没有错误产生，此时你本地的代码就已经上传到了Github中。<br>　　<strong>注意1</strong>：若上面操作失败，则需要提前安装一个扩展：</p>
-<p>　　　　npm install hexo-deployer-git –save</p>
-<p>　　<strong>注意2</strong>：如果在执行 hexo d 后,出现 error deployer not found:github 的错误（如下），则是因为没有设置好 public key 所致，重新详细设置即可。</p>
-<h6 id="6-关联Hexo-与-GitHub-Pages"><a href="#6-关联Hexo-与-GitHub-Pages" class="headerlink" title="6.关联Hexo 与 GitHub Pages:"></a>6.关联Hexo 与 GitHub Pages:</h6><p>　　代码库正确创建之后，并且已经将代码上传到了Github中，github 中就有了一个项目：</p>
-<p>　　<img src="img/3.png" alt="img"></p>
-<p>　　接下来开启Github pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：</p>
-<p>　　<img src="img/4.png" alt="img"></p>
-<p>　　</p>
-<p>　　在红框中选择已经上传的master branch代码。</p>
-<p>　　保存之后，此时直接访问之前创建New repository时所填的信息：xian521.github.io，就可以看到相应的web页面信息了，域名和站点都是免费的，是不是很cool！</p>
-
+        <p><strong>&#x5927;&#x81F4;&#x8FC7;&#x7A0B;&#x5206;&#x4E3A;&#xFF1A;</strong></p>
+        
+          <a class="article-more-a" href="/2019/10/10/hexo搭建个人博客/#more">more >></a>
+        
       
 
       
