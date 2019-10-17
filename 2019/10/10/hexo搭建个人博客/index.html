@@ -181,7 +181,31 @@
 <a href="/2019/10/10/hexo搭建个人博客/" class="archive-article-date">
   	<time datetime="2019-10-10T14:09:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
 </a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
         
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.6k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">10分</span>
+      </span>
+    </span>
+</div>
+
+          
+        <!-- 添加完成 -->
+	
       </header>
     
     <div class="article-entry" itemprop="articleBody">
@@ -274,7 +298,7 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>您的打赏就是对我最大的支持<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>打赏即鼓励&lt;br&gt;多少是心意<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
@@ -454,6 +478,23 @@
                 共同访问了本站<span id="busuanzi_value_site_pv"></span>次
         </span>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+	<script>
+    		var now = new Date(); 
+    		function createtime() { 
+        		var grt= new Date("10/10/2019 12:49:00");//此处修改你的建站时间或者网站上线时间 
+        		now.setTime(now.getTime()+250); 
+        		days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        		hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        		if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        		mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        		seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+       			snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        		document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        		document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    		} 
+		setInterval("createtime()",250);
+	</script>
 	<!-- 页面点击小红心，在末尾添加，避免找不到 -->
   	<script type="text/javascript" src="/love.js"></script>
 
