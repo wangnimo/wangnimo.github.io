@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>MYSQL操作表中数据之增删改查 | 隔壁王尼莫的博客</title>
+  <title>MYSQL数据库之联合查询 | 隔壁王尼莫的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.&amp;#x589E;&amp;#xFF08;&amp;#x63D2;&amp;#x5165;&amp;#xFF09;:">
+  <meta name="description" content="&amp;#x6982;&amp;#x8FF0;&amp;#xFF1A; &amp;#x3000;&amp;#x3000;&amp;#x8054;&amp;#x5408;&amp;#x67E5;&amp;#x8BE2;&amp;#x6548;&amp;#x7387;&amp;#x8F83;&amp;#x9AD8;&amp;#xFF0C;&amp;#x4E3E;&amp;#x4F8B;&amp;#x5B50;&amp;#x6765;&amp;#x8BF4;&amp;#x660E;&amp;#x8054;&amp;#x5408;&amp;#x67E5;&amp;#x8BE2;&amp;#xFF1A">
 <meta name="keywords" content="MYSQL,随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MYSQL操作表中数据之增删改查">
-<meta property="og:url" content="http://yoursite.com/2019/10/17/MYSQL操作表中数据之增删改查/index.html">
+<meta property="og:title" content="MYSQL数据库之联合查询">
+<meta property="og:url" content="http://yoursite.com/2019/10/24/MYSQL数据库之联合查询/index.html">
 <meta property="og:site_name" content="隔壁王尼莫的博客">
-<meta property="og:description" content="1.&amp;#x589E;&amp;#xFF08;&amp;#x63D2;&amp;#x5165;&amp;#xFF09;:">
+<meta property="og:description" content="&amp;#x6982;&amp;#x8FF0;&amp;#xFF1A; &amp;#x3000;&amp;#x3000;&amp;#x8054;&amp;#x5408;&amp;#x67E5;&amp;#x8BE2;&amp;#x6548;&amp;#x7387;&amp;#x8F83;&amp;#x9AD8;&amp;#xFF0C;&amp;#x4E3E;&amp;#x4F8B;&amp;#x5B50;&amp;#x6765;&amp;#x8BF4;&amp;#x660E;&amp;#x8054;&amp;#x5408;&amp;#x67E5;&amp;#x8BE2;&amp;#xFF1A">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-17T05:08:28.087Z">
+<meta property="og:updated_time" content="2019-11-03T10:37:05.690Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MYSQL操作表中数据之增删改查">
-<meta name="twitter:description" content="1.&amp;#x589E;&amp;#xFF08;&amp;#x63D2;&amp;#x5165;&amp;#xFF09;:">
+<meta name="twitter:title" content="MYSQL数据库之联合查询">
+<meta name="twitter:description" content="&amp;#x6982;&amp;#x8FF0;&amp;#xFF1A; &amp;#x3000;&amp;#x3000;&amp;#x8054;&amp;#x5408;&amp;#x67E5;&amp;#x8BE2;&amp;#x6548;&amp;#x7387;&amp;#x8F83;&amp;#x9AD8;&amp;#xFF0C;&amp;#x4E3E;&amp;#x4F8B;&amp;#x5B50;&amp;#x6765;&amp;#x8BF4;&amp;#x660E;&amp;#x8054;&amp;#x5408;&amp;#x67E5;&amp;#x8BE2;&amp;#xFF1A">
   
     <link rel="alternative" href="/atom.xml" title="隔壁王尼莫的博客" type="application/atom+xml">
   
@@ -155,14 +155,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-MYSQL操作表中数据之增删改查" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MYSQL数据库之联合查询" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      MYSQL操作表中数据之增删改查
+      MYSQL数据库之联合查询
     </h1>
   
 
@@ -173,8 +173,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2019/10/17/MYSQL操作表中数据之增删改查/" class="archive-article-date">
-  	<time datetime="2019-10-17T04:50:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
+<a href="/2019/10/24/MYSQL数据库之联合查询/" class="archive-article-date">
+  	<time datetime="2019-10-24T10:33:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
 </a>
         <!-- 需要添加的位置 -->
         <!-- 开始添加字数统计-->
@@ -184,7 +184,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">262字</span>
+        <span class="post-count">700字</span>
       </span>
     </span>
 
@@ -193,7 +193,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">4分</span>
       </span>
     </span>
 </div>
@@ -205,35 +205,189 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="1-&#x589E;&#xFF08;&#x63D2;&#x5165;&#xFF09;"><a href="#1-&#x589E;&#xFF08;&#x63D2;&#x5165;&#xFF09;" class="headerlink" title="1.&#x589E;&#xFF08;&#x63D2;&#x5165;&#xFF09;:"></a>1.&#x589E;&#xFF08;&#x63D2;&#x5165;&#xFF09;:</h4><a id="more"></a>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO &#x8868;&#x540D;(&#x5B57;&#x6BB5;) VALUES(&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;&#x503C;);</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-&#x5220;&#xFF08;&#x5220;&#x9664;&#xFF09;&#xFF1A;"><a href="#2-&#x5220;&#xFF08;&#x5220;&#x9664;&#xFF09;&#xFF1A;" class="headerlink" title="2.&#x5220;&#xFF08;&#x5220;&#x9664;&#xFF09;&#xFF1A;"></a>2.&#x5220;&#xFF08;&#x5220;&#x9664;&#xFF09;&#xFF1A;</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM &#x8868;&#x540D; WHERE &#x67E5;&#x8BE2;&#x5B57;&#x6BB5;=&#x5BF9;&#x5E94;&#x503C;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-&#x6539;&#xFF08;&#x4FEE;&#x6539;&#xFF09;&#xFF1A;"><a href="#3-&#x6539;&#xFF08;&#x4FEE;&#x6539;&#xFF09;&#xFF1A;" class="headerlink" title="3.&#x6539;&#xFF08;&#x4FEE;&#x6539;&#xFF09;&#xFF1A;"></a>3.&#x6539;&#xFF08;&#x4FEE;&#x6539;&#xFF09;&#xFF1A;</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE &#x8868;&#x540D; SET &#x8981;&#x4FEE;&#x6539;&#x503C;&#x7684;&#x5B57;&#x6BB5;=&#x4FEE;&#x6539;&#x540E;&#x7684;&#x503C; WHERE &#x67E5;&#x8BE2;&#x5B57;&#x6BB5;=&#x5BF9;&#x5E94;&#x503C;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-&#x67E5;&#xFF08;&#x67E5;&#x8BE2;&#xFF09;&#xFF1A;"><a href="#4-&#x67E5;&#xFF08;&#x67E5;&#x8BE2;&#xFF09;&#xFF1A;" class="headerlink" title="4.&#x67E5;&#xFF08;&#x67E5;&#x8BE2;&#xFF09;&#xFF1A;"></a>4.&#x67E5;&#xFF08;&#x67E5;&#x8BE2;&#xFF09;&#xFF1A;</h4><p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x4EBA;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT id,stuno,name,nation from stuinfo;</span><br><span class="line">SELECT * from stuinfo;</span><br></pre></td></tr></table></figure>
-
-<p>&#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x5927;&#x4E8E;1000&#x7684;&#x540C;&#x5B66;&#x59D3;&#x540D;&#x548C;&#x5E74;&#x9F84;&#xFF1B;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT name &#x59D3;&#x540D;,age &#x5E74;&#x9F84;,nation &#x6C11;&#x65CF; from stuinfo where age &gt; 1000;</span><br></pre></td></tr></table></figure>
-
-<p>&#x67E5;&#x8BE2;&#x5E74;&#x9F84;&#x5927;&#x4E8E;1000&#x7684;&#x540C;&#x5B66;&#x59D3;&#x540D;&#xFF0C;&#x5E76;&#x4E14;&#x628A;&#x91CD;&#x590D;&#x4FE1;&#x606F;&#x5408;&#x5E76;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT DISTINCT name &#x59D3;&#x540D; from stuinfo where age &gt; 1000;</span><br></pre></td></tr></table></figure>
-
-<p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x4EBA;&#x7684;&#x5B66;&#x53F7;&#x548C;&#x59D3;&#x540D;,&#x53EA;&#x663E;&#x793A;&#x7B2C;50&#x9875;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6BCF;&#x9875;5&#x6761;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT stuno,name from stuinfo LIMIT 0,5;</span><br></pre></td></tr></table></figure>
-
-<p>&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5B66;&#x5458;&#x4FE1;&#x606F;&#xFF0C;&#x6309;&#x7167;&#x5E74;&#x9F84;&#x5347;&#x5E8F;&#x6392;&#x5E8F;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * from stuinfo order by age asc;</span><br></pre></td></tr></table></figure>
-
-<p>&#x67E5;&#x8BE2;&#x540D;&#x5B57;&#x662F;&#x4E24;&#x4E2A;&#x5B57;&#xFF0C;&#x6309;&#x7167;&#x5E74;&#x9F84;&#x964D;&#x5E8F;&#x6392;&#x5217;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * from stuinfo WHERE name LIKE &apos;__&apos; order by age DESC;</span><br></pre></td></tr></table></figure>
-
-<p>&#x6309;&#x7167;&#x6C11;&#x65CF;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * from stuinfo order by nation DESC;</span><br></pre></td></tr></table></figure>
-
+        <p>&#x6982;&#x8FF0;&#xFF1A;</p>
+<p>&#x3000;&#x3000;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#x8F83;&#x9AD8;&#xFF0C;&#x4E3E;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#xFF1A;&#x5185;&#x8054;inner join &#x3001;&#x5DE6;&#x8054;left outer join &#x3001;&#x53F3;&#x8054;right outer join &#x3001;&#x5168;&#x8054;full outer join &#x7684;&#x597D;&#x5904;&#x53CA;&#x7528;&#x6CD5;&#x3002;<a id="more"></a></p>
+<p>&#x3000;&#x3000;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#x6548;&#x7387;&#x8F83;&#x9AD8;&#xFF0C;&#x4EE5;&#x4E0B;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x8054;&#x5408;&#x67E5;&#x8BE2;(&#x5185;&#x8054;&#x3001;&#x5DE6;&#x8054;&#x3001;&#x53F3;&#x8054;&#x3001;&#x5168;&#x8054;)&#x7684;&#x597D;&#x5904;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>T1&#x8868;&#x7ED3;&#x6784; &#xFF08;&#x7528;&#x6237;&#x540D;,&#x5BC6;&#x7801;&#xFF09;</th>
+<th>userid &#xFF08;int&#xFF09;</th>
+<th>username varchar&#xFF08;20&#xFF09;</th>
+<th>password  varchar&#xFF08;20&#xFF09;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>1</td>
+<td>jack</td>
+<td>jackpwd</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>owen</td>
+<td>owenpwd</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>T2&#x8868;&#x7ED3;&#x6784; &#xFF08;&#x7528;&#x6237;&#x540D;,&#x5BC6;&#x7801;&#xFF09;</td>
+<td>userid &#xFF08;int&#xFF09;</td>
+<td>jifen varchar&#xFF08;20&#xFF09;</td>
+<td>dengji  varchar&#xFF08;20&#xFF09;</td>
+</tr>
+<tr>
+<td></td>
+<td>1</td>
+<td>20</td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td>3</td>
+<td>50</td>
+<td>6</td>
+</tr>
+</tbody></table>
+<h5 id="&#x7B2C;&#x4E00;&#xFF1A;&#x5185;&#x8054;-inner-join-&#x3002;"><a href="#&#x7B2C;&#x4E00;&#xFF1A;&#x5185;&#x8054;-inner-join-&#x3002;" class="headerlink" title="&#x3000;&#x3000;&#x7B2C;&#x4E00;&#xFF1A;&#x5185;&#x8054;(inner join)&#x3002;"></a>&#x3000;&#x3000;&#x7B2C;&#x4E00;&#xFF1A;&#x5185;&#x8054;(inner join)&#x3002;</h5><p>&#x3000;&#x3000;&#x5982;&#x679C;&#x60F3;&#x628A;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x3001;&#x79EF;&#x5206;&#x3001;&#x7B49;&#x7EA7;&#x90FD;&#x5217;&#x51FA;&#x6765;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x822C;&#x4F1A;&#x8FD9;&#x6837;&#x5199;&#xFF1A;select * from T1 ,T3 where T1.userid = T3.userid(&#x5176;&#x5B9E;&#x8FD9;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x7B49;&#x540C;&#x4E8E;select * from T1 inner join T3 on T1.userid=T3.userid )&#x3002;</p>
+<p>&#x3000;&#x3000;&#x628A;&#x4E24;&#x4E2A;&#x8868;&#x4E2D;&#x90FD;&#x5B58;&#x5728;userid&#x7684;&#x884C;&#x62FC;&#x6210;&#x4E00;&#x884C;(&#x5373;&#x5185;&#x8054;)&#xFF0C;&#x4F46;&#x540E;&#x8005;&#x7684;&#x6548;&#x7387;&#x4F1A;&#x6BD4;&#x524D;&#x8005;&#x9AD8;&#x5F88;&#x591A;&#xFF0C;&#x5EFA;&#x8BAE;&#x7528;&#x540E;&#x8005;(&#x5185;&#x8054;)&#x7684;&#x5199;&#x6CD5;&#x3002;</p>
+<p>&#x3000;&#x3000;SQL&#x8BED;&#x53E5;&#xFF1A;select * from T1 inner join T2 on T1.userid=T2.userid</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</th>
+<th>T1.userid</th>
+<th>username</th>
+<th>password</th>
+<th>T2.userid</th>
+<th>jifen</th>
+<th>dengji</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>1</td>
+<td>jack</td>
+<td>jackpwd</td>
+<td>1</td>
+<td>20</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<h5 id="&#x7B2C;&#x4E8C;&#xFF1A;&#x5DE6;&#x8054;-left-outer-join-&#x3002;"><a href="#&#x7B2C;&#x4E8C;&#xFF1A;&#x5DE6;&#x8054;-left-outer-join-&#x3002;" class="headerlink" title="&#x3000;&#x3000;&#x7B2C;&#x4E8C;&#xFF1A;&#x5DE6;&#x8054;(left outer join)&#x3002;"></a>&#x3000;&#x3000;&#x7B2C;&#x4E8C;&#xFF1A;&#x5DE6;&#x8054;(left outer join)&#x3002;</h5><p>&#x3000;&#x3000;&#x663E;&#x793A;&#x5DE6;&#x8868;T1&#x4E2D;&#x7684;&#x6240;&#x6709;&#x884C;&#xFF0C;&#x5E76;&#x628A;&#x53F3;&#x8868;T2&#x4E2D;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x52A0;&#x5230;&#x5DE6;&#x8868;T1&#x4E2D;;&#x53F3;&#x8868;T2&#x4E2D;&#x4E0D;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x52A0;&#x5165;&#x7ED3;&#x679C;&#x8868;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;NULL&#x8868;&#x793A;&#x3002;</p>
+<p>&#x3000;&#x3000;SQL&#x8BED;&#x53E5;&#xFF1A;select * from T1 left outer join T2 on T1.userid=T2.userid</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</th>
+<th>T1.userid</th>
+<th>username</th>
+<th>password</th>
+<th>T2.userid</th>
+<th>jifen</th>
+<th>dengji</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>1</td>
+<td>jack</td>
+<td>jackpwd</td>
+<td>1</td>
+<td>20</td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>owen</td>
+<td>owenpwd</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>NULL</td>
+</tr>
+</tbody></table>
+<h5 id="&#x7B2C;&#x4E09;&#xFF1A;&#x53F3;&#x8054;-right-outer-join-&#x3002;"><a href="#&#x7B2C;&#x4E09;&#xFF1A;&#x53F3;&#x8054;-right-outer-join-&#x3002;" class="headerlink" title="&#x3000;&#x3000;&#x7B2C;&#x4E09;&#xFF1A;&#x53F3;&#x8054;(right outer join)&#x3002;"></a>&#x3000;&#x3000;&#x7B2C;&#x4E09;&#xFF1A;&#x53F3;&#x8054;(right outer join)&#x3002;</h5><p>&#x3000;&#x3000;&#x663E;&#x793A;&#x53F3;&#x8868;T2&#x4E2D;&#x7684;&#x6240;&#x6709;&#x884C;&#xFF0C;&#x5E76;&#x628A;&#x5DE6;&#x8868;T1&#x4E2D;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x52A0;&#x5230;&#x53F3;&#x8868;T2&#x4E2D;;&#x5DE6;&#x8868;T1&#x4E2D;&#x4E0D;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x52A0;&#x5165;&#x7ED3;&#x679C;&#x8868;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;NULL&#x8868;&#x793A;&#x3002;</p>
+<p>&#x3000;&#x3000;SQL&#x8BED;&#x53E5;&#xFF1A;select * from T1 right outer join T2 on T1.userid=T2.userid</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</th>
+<th>T1.userid</th>
+<th>username</th>
+<th>password</th>
+<th>T2.userid</th>
+<th>jifen</th>
+<th>dengji</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>1</td>
+<td>jack</td>
+<td>jackpwd</td>
+<td>1</td>
+<td>20</td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td>NULL</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>3</td>
+<td>50</td>
+<td>6</td>
+</tr>
+</tbody></table>
+<h5 id="&#x7B2C;&#x56DB;&#xFF1A;&#x5168;&#x8054;-full-outer-join-&#x3002;"><a href="#&#x7B2C;&#x56DB;&#xFF1A;&#x5168;&#x8054;-full-outer-join-&#x3002;" class="headerlink" title="&#x3000;&#x3000;&#x7B2C;&#x56DB;&#xFF1A;&#x5168;&#x8054;(full outer join)&#x3002;"></a>&#x3000;&#x3000;&#x7B2C;&#x56DB;&#xFF1A;&#x5168;&#x8054;(full outer join)&#x3002;</h5><p>&#x3000;&#x3000;&#x663E;&#x793A;&#x5DE6;&#x8868;T1&#x3001;&#x53F3;&#x8868;T2&#x4E24;&#x8FB9;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x884C;&#xFF0C;&#x5373;&#x628A;&#x5DE6;&#x8054;&#x7ED3;&#x679C;&#x8868;+&#x53F3;&#x8054;&#x7ED3;&#x679C;&#x8868;&#x7EC4;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x7136;&#x540E;&#x8FC7;&#x6EE4;&#x6389;&#x91CD;&#x590D;&#x7684;&#x3002;</p>
+<p>&#x3000;&#x3000;SQL&#x8BED;&#x53E5;&#xFF1A;select * from T1 full outer join T2 on T1.userid=T2.userid</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x884C;&#x7ED3;&#x679C;</th>
+<th>T1.userid</th>
+<th>username</th>
+<th>password</th>
+<th>T2.userid</th>
+<th>jifen</th>
+<th>dengji</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>1</td>
+<td>jack</td>
+<td>jackpwd</td>
+<td>1</td>
+<td>20</td>
+<td>3</td>
+</tr>
+<tr>
+<td></td>
+<td>2</td>
+<td>owen</td>
+<td>owenpwd</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>NULL</td>
+</tr>
+<tr>
+<td></td>
+<td>NULL</td>
+<td>NULL</td>
+<td>NULL</td>
+<td>3</td>
+<td>50</td>
+<td>6</td>
+</tr>
+</tbody></table>
+<p>&#x3000;&#x3000;&#x603B;&#x7ED3;&#xFF0C;&#x5173;&#x4E8E;&#x8054;&#x5408;&#x67E5;&#x8BE2;&#xFF0C;&#x6548;&#x7387;&#x7684;&#x786E;&#x6BD4;&#x8F83;&#x9AD8;&#xFF0C;4&#x79CD;&#x8054;&#x5408;&#x65B9;&#x5F0F;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x4F7F;&#x7528;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x590D;&#x6742;&#x7684;&#x8BED;&#x53E5;&#x7ED3;&#x6784;&#x4E5F;&#x4F1A;&#x7B80;&#x5355;&#x8D77;&#x6765;&#x3002;&#x8FD9;4&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#xFF1A;1)Inner join 2)left outer join 3)right outer join 4)full outer join</p>
 
       
 
@@ -338,7 +492,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/17/MYSQL操作表中数据之增删改查/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/24/MYSQL数据库之联合查询/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -352,18 +506,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/24/MYSQL数据库之联合查询/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MYSQL数据库之联合查询
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/15/文章插入图片详解/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">文章插入图片详解</div>
+    <a href="/2019/10/17/MYSQL操作表中数据之增删改查/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MYSQL操作表中数据之增删改查</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -390,7 +535,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-增（插入）"><span class="toc-number">1.</span> <span class="toc-text">1.增（插入）:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-删（删除）："><span class="toc-number">2.</span> <span class="toc-text">2.删（删除）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-改（修改）："><span class="toc-number">3.</span> <span class="toc-text">3.改（修改）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-查（查询）："><span class="toc-number">4.</span> <span class="toc-text">4.查（查询）：</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#第一：内联-inner-join-。"><span class="toc-number">1.</span> <span class="toc-text">　　第一：内联(inner join)。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#第二：左联-left-outer-join-。"><span class="toc-number">2.</span> <span class="toc-text">　　第二：左联(left outer join)。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#第三：右联-right-outer-join-。"><span class="toc-number">3.</span> <span class="toc-text">　　第三：右联(right outer join)。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#第四：全联-full-outer-join-。"><span class="toc-number">4.</span> <span class="toc-text">　　第四：全联(full outer join)。</span></a></li></ol>
                     </div>
                 </span>
             </div>
