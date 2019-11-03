@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/10 | 隔壁王尼莫的博客</title>
+  <title>MYSQL数据库之子查询 | 隔壁王尼莫的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="隔壁王尼莫的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/10/index.html">
+  <meta name="description" content="&amp;#x4E00;&amp;#x3001;&amp;#x5B50;&amp;#x67E5;&amp;#x8BE2;&amp;#x5B9A;&amp;#x4E49;&amp;#x3000;&amp;#x3000;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A; &amp;#x3000;&amp;#x3000;&amp;#x5B50;&amp;#x67E5;&amp;#x8BE2;&amp;#x5141;&amp;#x8BB8;&amp;#x628A;&amp;#x4E00;&amp;#x4E2A;&amp;#x67E5;&amp;#x8BE2;&amp;#x5D4C">
+<meta name="keywords" content="MYSQL,随笔">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MYSQL数据库之子查询">
+<meta property="og:url" content="http://yoursite.com/2019/11/27/MYSQL数据库之子查询/index.html">
 <meta property="og:site_name" content="隔壁王尼莫的博客">
+<meta property="og:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x5B50;&amp;#x67E5;&amp;#x8BE2;&amp;#x5B9A;&amp;#x4E49;&amp;#x3000;&amp;#x3000;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A; &amp;#x3000;&amp;#x3000;&amp;#x5B50;&amp;#x67E5;&amp;#x8BE2;&amp;#x5141;&amp;#x8BB8;&amp;#x628A;&amp;#x4E00;&amp;#x4E2A;&amp;#x67E5;&amp;#x8BE2;&amp;#x5D4C">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-03T11:31:00.218Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="隔壁王尼莫的博客">
+<meta name="twitter:title" content="MYSQL数据库之子查询">
+<meta name="twitter:description" content="&amp;#x4E00;&amp;#x3001;&amp;#x5B50;&amp;#x67E5;&amp;#x8BE2;&amp;#x5B9A;&amp;#x4E49;&amp;#x3000;&amp;#x3000;&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A; &amp;#x3000;&amp;#x3000;&amp;#x5B50;&amp;#x67E5;&amp;#x8BE2;&amp;#x5141;&amp;#x8BB8;&amp;#x628A;&amp;#x4E00;&amp;#x4E2A;&amp;#x67E5;&amp;#x8BE2;&amp;#x5D4C">
   
     <link rel="alternative" href="/atom.xml" title="隔壁王尼莫的博客" type="application/atom+xml">
   
@@ -150,37 +155,183 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-MYSQL数据库之子查询" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/24/MYSQL数据库之联合查询/" class="archive-article-date">
-  	<time datetime="2019-10-24T10:33:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-24</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/24/MYSQL数据库之联合查询/">MYSQL数据库之联合查询</a>
+    <h1 class="article-title" itemprop="name">
+      MYSQL数据库之子查询
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" class="archive-article-date" style="display: inline-block;">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/11/27/MYSQL数据库之子查询/" class="archive-article-date">
+  	<time datetime="2019-11-27T11:19:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-27</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">3.8k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">24分</span>
+      </span>
+    </span>
+</div>
+
           
+        <!-- 添加完成 -->
+	
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="&#x4E00;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5B9A;&#x4E49;"><a href="#&#x4E00;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5B9A;&#x4E49;" class="headerlink" title="&#x4E00;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5B9A;&#x4E49;"></a>&#x4E00;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5B9A;&#x4E49;</h3><p>&#x3000;&#x3000;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<p>&#x3000;&#x3000;&#x5B50;&#x67E5;&#x8BE2;&#x5141;&#x8BB8;&#x628A;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x5D4C;&#x5957;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x5F53;&#x4E2D;&#x3002;<a id="more"></a></p>
+<p>&#x3000;&#x3000;&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x53C8;&#x53EB;&#x5185;&#x90E8;&#x67E5;&#x8BE2;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x5185;&#x90E8;&#x67E5;&#x8BE2;&#xFF0C;&#x5305;&#x542B;&#x5185;&#x90E8;&#x67E5;&#x8BE2;&#x7684;&#x5C31;&#x79F0;&#x4E3A;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x5B50;&#x67E5;&#x8BE2;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x666E;&#x901A;select&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x7684;&#x4EFB;&#x4F55;&#x5B50;&#x53E5;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;distinct&#x3001; group by&#x3001;order by&#x3001;limit&#x3001;join&#x548C;union&#x7B49;&#xFF1B;&#x4F46;&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x5FC5;&#x987B;&#x662F;&#x4EE5;&#x4E0B;&#x8BED;&#x53E5;&#x4E4B;&#x4E00;&#xFF1A;select&#x3001;insert&#x3001;update&#x3001;delete&#x3001;set&#x6216; &#x8005;do&#x3002;</p>
+<p>&#x3000;&#x3000;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x4F4D;&#x7F6E;&#xFF1A;<br>&#x3000;&#x3000;&#x3000;&#x3000;select &#x4E2D;&#x3001;from &#x540E;&#x3001;where &#x4E2D;.group by &#x548C;order by &#x4E2D;&#x65E0;&#x5B9E;&#x7528;&#x610F;&#x4E49;&#x3002;</p>
+<h3 id="&#x4E8C;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5206;&#x7C7B;"><a href="#&#x4E8C;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5206;&#x7C7B;" class="headerlink" title="&#x4E8C;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5206;&#x7C7B;"></a>&#x4E8C;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x5206;&#x7C7B;</h3><p>&#x3000;&#x3000;&#x5B50;&#x67E5;&#x8BE2;&#x5206;&#x4E3A;&#x5982;&#x4E0B;&#x51E0;&#x7C7B;&#xFF1A;<br>&#x3000;&#x3000;&#x3000;&#x3000;1. &#x6807;&#x91CF;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;&#x8FD4;&#x56DE;&#x5355;&#x4E00;&#x503C;&#x7684;&#x6807;&#x91CF;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5F62;&#x5F0F;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;2. &#x5217;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x662F; N &#x884C;&#x4E00;&#x5217;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;3. &#x884C;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x662F;&#x4E00;&#x884C; N &#x5217;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;4. &#x8868;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x662F; N &#x884C; N &#x5217;&#x3002;<br>&#x3000;&#x3000;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#xFF1A;= &gt; &lt; &gt;= &lt;= &lt;&gt; ANY IN SOME ALL EXISTS </p>
+<p>&#x3000;&#x3000;&#x4E00;&#x4E2A;&#x5B50;&#x67E5;&#x8BE2;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6807;&#x91CF;&#xFF08;&#x5C31;&#x4E00;&#x4E2A;&#x503C;&#xFF09;&#x3001;&#x4E00;&#x4E2A;&#x884C;&#x3001;&#x4E00;&#x4E2A;&#x5217;&#x6216;&#x4E00;&#x4E2A;&#x8868;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B50;&#x67E5;&#x8BE2;&#x79F0;&#x4E4B;&#x4E3A;&#x6807;&#x91CF;&#x3001;&#x884C;&#x3001;&#x5217;&#x548C;&#x8868;&#x5B50;&#x67E5;&#x8BE2;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x5982;&#x679C;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6807;&#x91CF;&#x503C;&#xFF08;&#x5C31;&#x4E00;&#x4E2A;&#x503C;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;=&#x3001;&gt;&#x3001;&lt;&#x3001;&gt;=&#x3001;&lt;=&#x548C;&lt;&gt;&#x7B26;&#x53F7;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x5224;&#x65AD;&#xFF1B;&#x5982;&#x679C;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x91CF;&#x503C;&#xFF0C;&#x800C;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;&#x4E86;&#x6BD4;&#x8F83;&#x7B26;&#x548C;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x4E86;&#x6BD4;&#x8F83;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>1. &#x6807;&#x91CF;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;</strong></p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x662F;&#x6307;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5355;&#x4E00;&#x503C;&#x7684;&#x6807;&#x91CF;&#xFF0C;&#x5982;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6216;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x662F;&#x5B50;&#x67E5;&#x8BE2;&#x4E2D;&#x6700;&#x7B80;&#x5355;&#x7684;&#x8FD4;&#x56DE;&#x5F62;&#x5F0F;&#x3002; &#x53EF;&#x4EE5;&#x4F7F;&#x7528; = &gt; &lt; &gt;= &lt;= &lt;&gt; &#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x7B26;&#x5BF9;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x6807;&#x91CF;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x901A;&#x5E38;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x4F4D;&#x7F6E;&#x5728;&#x6BD4;&#x8F83;&#x5F0F;&#x7684;&#x53F3;&#x4FA7;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x793A;&#x4F8B;&#xFF1A; &#x3000;&#x3000;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`SELECT * FROM article WHERE uid = (SELECT uid FROM user WHERE status=1 ORDER BY uid DESC LIMIT 1)``SELECT * FROM t1 WHERE column1 = (SELECT MAX(column2) FROM t2)``SELECT * FROM article AS t WHERE 2 = (SELECT COUNT(*) FROM article WHERE article.uid = t.uid)`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;<strong>2. MySQL &#x5217;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;</strong></p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x6307;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x662F; N &#x884C;&#x4E00;&#x5217;&#xFF0C;&#x8BE5;&#x7ED3;&#x679C;&#x901A;&#x5E38;&#x6765;&#x81EA;&#x5BF9;&#x8868;&#x7684;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; = &gt; &lt; &gt;= &lt;= &lt;&gt; &#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x7B26;&#x5BF9;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x6807;&#x91CF;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x901A;&#x5E38;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x4F4D;&#x7F6E;&#x5728;&#x6BD4;&#x8F83;&#x5F0F;&#x7684;&#x53F3;&#x4FA7;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; IN&#x3001;ANY&#x3001;SOME &#x548C; ALL &#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528; = &gt; &lt; &gt;= &lt;= &lt;&gt; &#x8FD9;&#x4E9B;&#x6BD4;&#x8F83;&#x6807;&#x91CF;&#x7ED3;&#x679C;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x793A;&#x4F8B;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`SELECT * FROM article WHERE uid IN(SELECT uid FROM user WHERE status=1)``SELECT s1 FROM table1 WHERE s1 &gt; ANY (SELECT s2 FROM table2)``SELECT s1 FROM table1 WHERE s1 &gt; ALL (SELECT s2 FROM table2)`</span><br></pre></td></tr></table></figure>
+
+<p>&#x3000;&#x3000;&#x3000;&#x3000;NOT IN &#x662F; &lt;&gt; ALL &#x7684;&#x522B;&#x540D;&#xFF0C;&#x4E8C;&#x8005;&#x76F8;&#x540C;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x7279;&#x6B8A;&#x60C5;&#x51B5;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x5982;&#x679C; table2 &#x4E3A;&#x7A7A;&#x8868;&#xFF0C;&#x5219; ALL &#x540E;&#x7684;&#x7ED3;&#x679C;&#x4E3A; TRUE&#xFF1B;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x5982;&#x679C;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x5982; (0,NULL,1) &#x8FD9;&#x79CD;&#x5C3D;&#x7BA1; s1 &#x6BD4;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x90FD;&#x5927;&#xFF0C;&#x4F46;&#x6709;&#x7A7A;&#x884C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5219; ALL &#x540E;&#x7684;&#x7ED3;&#x679C;&#x4E3A; UNKNOWN &#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x6CE8;&#x610F;&#xFF1A;&#x5BF9;&#x4E8E; table2 &#x7A7A;&#x8868;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x5747;&#x8FD4;&#x56DE; NULL&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`SELECT s1 FROM table1 WHERE s1 &gt; (SELECT s2 FROM table2)``SELECT s1 FROM table1 WHERE s1 &gt; ALL (SELECT MAX(s1) FROM table2)`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;<strong>3. MySQL &#x884C;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;</strong></p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x6307;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x662F;&#x4E00;&#x884C; N &#x5217;&#xFF0C;&#x8BE5;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x7ED3;&#x679C;&#x901A;&#x5E38;&#x662F;&#x5BF9;&#x8868;&#x7684;&#x67D0;&#x884C;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x800C;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`SELECT * FROM table1 WHERE (1,2) = (SELECT column1, column2 FROM table2)``&#x6CE8;&#xFF1A;(1,2) &#x7B49;&#x540C;&#x4E8E; row(1,2)``SELECT * FROM article WHERE (title,content,uid) = (SELECT title,content,uid FROM blog WHERE bid=2)`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;<strong>4. MySQL &#x8868;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;</strong></p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x6307;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x96C6;&#x662F; N &#x884C; N &#x5217;&#x7684;&#x4E00;&#x4E2A;&#x8868;&#x6570;&#x636E;&#x3002;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`SELECT * FROM article WHERE (title,content,uid) IN (SELECT title,content,uid FROM blog)`</span><br></pre></td></tr></table></figure>
+
+<h3 id="&#x4E09;&#x3001;&#x5B57;&#x67E5;&#x8BE2;&#x4F8B;&#x4E3E;"><a href="#&#x4E09;&#x3001;&#x5B57;&#x67E5;&#x8BE2;&#x4F8B;&#x4E3E;" class="headerlink" title="&#x4E09;&#x3001;&#x5B57;&#x67E5;&#x8BE2;&#x4F8B;&#x4E3E;"></a><strong>&#x4E09;&#x3001;&#x5B57;&#x67E5;&#x8BE2;&#x4F8B;&#x4E3E;</strong></h3><p>&#x3000;&#x3000;<strong>1. ANY&#x8FDB;&#x884C;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;any&#x5173;&#x952E;&#x8BCD;&#x7684;&#x610F;&#x601D;&#x662F;&#x201C;&#x5BF9;&#x4E8E;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x5217;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x6BD4;&#x8F83;&#x7ED3;&#x679C;&#x4E3A;TRUE&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;TRUE&#x201D;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x597D;&#x6BD4;&#x201C;10 &gt;any(11, 20, 2, 30)&#x201D;&#xFF0C;&#x7531;&#x4E8E;10&gt;2&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x8BE5;&#x8BE5;&#x5224;&#x65AD;&#x4F1A;&#x8FD4;&#x56DE;TRUE&#xFF1B;&#x53EA;&#x8981;10&#x4E0E;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x5F97;&#x5230;TRUE&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE;TRUE&#x3002;&#x3000;&#x3000;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`select` `table1.customer_id,city,count(order_id)``from` `table1 ``join` `table2``on` `table1.customer_id=table2.customer_id``where` `table1.customer_id&lt;&gt;``&apos;tx&apos;` `and table1.customer_id&lt;&gt;``&apos;9you&apos;``group` `by` `customer_id``having count(order_id) &gt;``any (``select` `count(order_id)``from` `table2``where` `customer_id=``&apos;tx&apos;` `or customer_id=``&apos;9you&apos;``group` `by` `customer_id);`</span><br></pre></td></tr></table></figure>
+
+<p>&#x3000;&#x3000;any&#x7684;&#x610F;&#x601D;&#x6BD4;&#x8F83;&#x597D;&#x660E;&#x767D;&#xFF0C;&#x76F4;&#x8BD1;&#x5C31;&#x662F;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#xFF0C;&#x53EA;&#x8981;&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x4EFB;&#x610F;&#x7684;&#x4E00;&#x4E2A;&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;TRUE&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>2. &#x4F7F;&#x7528;IN&#x8FDB;&#x884C;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;&#x4F7F;&#x7528;in&#x8FDB;&#x884C;&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x8FD9;&#x4E2A;&#x6211;&#x4EEC;&#x5728;&#x65E5;&#x5E38;&#x5199;sql&#x7684;&#x65F6;&#x5019;&#x662F;&#x7ECF;&#x5E38;&#x9047;&#x5230;&#x7684;&#x3002;in&#x7684;&#x610F;&#x601D;&#x5C31;&#x662F;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x4E2A;&#x503C;&#x662F;&#x5426;&#x5728;&#x8FD9;&#x4E2A;&#x96C6;&#x5408;&#x4E2D;&#xFF0C;&#x5982;&#x4F55;&#x5728;&#x5C31;&#x8FD4;&#x56DE;TRUE&#xFF1B;&#x5426;&#x5219;&#x5C31;&#x8FD4;&#x56DE;FALSE&#x4E86;&#x3002;</p>
+<p>&#x3000;&#x3000;in&#x662F;&#x201C;=any&#x201D;&#x7684;&#x522B;&#x540D;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x201C;=any&#x201D;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x201C;in&#x201D;&#x6765;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x6709;&#x4E86;in&#xFF0C;&#x80AF;&#x5B9A;&#x5C31;&#x6709;&#x4E86;not in&#xFF1B;not in&#x5E76;&#x4E0D;&#x662F;&#x548C;&lt;&gt;any&#x662F;&#x540C;&#x6837;&#x7684;&#x610F;&#x601D;&#xFF0C;not in&#x548C;&lt;&gt;all&#x662F;&#x4E00;&#x4E2A;&#x610F;&#x601D;&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>3. &#x4F7F;&#x7528;SOME&#x8FDB;&#x884C;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;some&#x662F;any&#x7684;&#x522B;&#x540D;&#xFF0C;&#x7528;&#x7684;&#x6BD4;&#x8F83;&#x5C11;&#x3002;
+&#x3000;&#x3000;</p>
+<p>&#x3000;&#x3000;<strong>4. &#x4F7F;&#x7528;ALL&#x8FDB;&#x884C;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;all&#x5FC5;&#x987B;&#x4E0E;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#x7B26;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;all&#x7684;&#x610F;&#x601D;&#x662F;&#x201C;&#x5BF9;&#x4E8E;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x5217;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x6BD4;&#x8F83;&#x7ED3;&#x679C;&#x4E3A;TRUE&#xFF0C;&#x5219;&#x8FD4;&#x56DE;TRUE&#x201D;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x597D;&#x6BD4;&#x201C;10 &gt;all(2, 4, 5, 1)&#x201D;&#xFF0C;&#x7531;&#x4E8E;10&#x5927;&#x4E8E;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x503C;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x6761;&#x5224;&#x65AD;&#x5C31;&#x8FD4;&#x56DE;TRUE&#xFF1B;&#x800C;&#x5982;&#x679C;&#x4E3A;&#x201C;10 &gt;all(20, 3, 2, 1, 4)&#x201D;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x7531;&#x4E8E;10&#x5C0F;&#x4E8E;20&#xFF0C;&#x6240;&#x4EE5;&#x8BE5;&#x5224;&#x65AD;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE;FALSE&#x3002;</p>
+<p>&#x3000;&#x3000;&lt;&gt;all&#x7684;&#x540C;&#x4E49;&#x8BCD;&#x662F;not in&#xFF0C;&#x8868;&#x793A;&#x4E0D;&#x7B49;&#x4E8E;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;&#x5F88;&#x5BB9;&#x6613;&#x548C;&lt;&gt;any&#x641E;&#x6DF7;&#xFF0C;&#x5E73;&#x65F6;&#x591A;&#x7559;&#x70B9;&#x5FC3;&#x5C31;&#x597D;&#x4E86;&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>5.&#x6807;&#x91CF;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;&#x6839;&#x636E;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5C06;&#x5B50;&#x67E5;&#x8BE2;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x6807;&#x91CF;&#x5B50;&#x67E5;&#x8BE2;&#x548C;&#x591A;&#x503C;&#x5B50;&#x67E5;&#x8BE2;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x6BD4;&#x8F83;&#x7B26;&#x8FDB;&#x884C;&#x5B50;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;&#x5C31;&#x8981;&#x6C42;&#x5FC5;&#x987B;&#x662F;&#x6807;&#x91CF;&#x5B50;&#x67E5;&#x8BE2;&#xFF1B;&#x5982;&#x679C;&#x662F;&#x591A;&#x503C;&#x5B50;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x6BD4;&#x8F83;&#x7B26;&#xFF0C;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>6. &#x591A;&#x503C;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;&#x4E0E;&#x6807;&#x91CF;&#x5B50;&#x67E5;&#x8BE2;&#x5BF9;&#x5E94;&#x7684;&#x5C31;&#x662F;&#x591A;&#x503C;&#x5B50;&#x67E5;&#x8BE2;&#x4E86;&#xFF0C;&#x591A;&#x503C;&#x5B50;&#x67E5;&#x8BE2;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x5217;&#x3001;&#x4E00;&#x884C;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x8868;&#xFF0C;&#x5B83;&#x4EEC;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#x3002;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x7684;any&#x3001;in&#x3001;all&#x548C;some&#x7B49;&#x8BCD;&#xFF0C;&#x5C06;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x4E0E;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x3002;&#x5982;&#x679C;&#x5C06;any&#x3001;in&#x3001;all&#x548C;some&#x7B49;&#x8BCD;&#x4E0E;&#x6807;&#x91CF;&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x7A7A;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>7. &#x72EC;&#x7ACB;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;&#x72EC;&#x7ACB;&#x5B50;&#x67E5;&#x8BE2;&#x662F;&#x4E0D;&#x4F9D;&#x8D56;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x800C;&#x8FD0;&#x884C;&#x7684;&#x5B50;&#x67E5;&#x8BE2;&#x3002;&#x4EC0;&#x4E48;&#x53EB;&#x4F9D;&#x8D56;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#xFF1F;&#x5148;&#x770B;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;sql&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x3000;&#x3000;sql&#x8BED;&#x53E5;1&#xFF1A;&#x83B7;&#x5F97;&#x6240;&#x6709;hangzhou&#x987E;&#x5BA2;&#x7684;&#x8BA2;&#x5355;&#x53F7;&#x3002;&#x3000;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`select` `order_id``from` `table2``where` `customer_id ``in``          ``(``select` `customer_id``          ``from` `table1``          ``where` `city=``&apos;hangzhou&apos;``);`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;sql&#x8BED;&#x53E5;2&#xFF1A;&#x83B7;&#x5F97;&#x57CE;&#x5E02;&#x4E3A;hangzhou&#xFF0C;&#x5E76;&#x4E14;&#x5B58;&#x5728;&#x8BA2;&#x5355;&#x7684;&#x7528;&#x6237;&#x3002;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`select` `*``from` `table1``where` `city=``&apos;hangzhou&apos;` `and exists``                ``(``select` `*``                ``from` `table2``                ``where` `table1.customer_id=table2.customer_id);`</span><br></pre></td></tr></table></figure>
+
+<p>&#x3000;&#x3000;&#x4E0A;&#x9762;&#x7684;&#x4E24;&#x6761;sql&#x8BED;&#x53E5;&#xFF0C;&#x867D;&#x7136;&#x4F8B;&#x5B50;&#x4E3E;&#x7684;&#x6709;&#x70B9;&#x4E0D;&#x662F;&#x5F88;&#x6070;&#x5F53;&#xFF0C;&#x4F46;&#x662F;&#x8DB3;&#x4EE5;&#x8BF4;&#x660E;&#x8FD9;&#x91CC;&#x7684;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x5BF9;&#x4E8E;sql&#x8BED;&#x53E5;1&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5B50;&#x67E5;&#x8BE2;&#x5355;&#x72EC;&#x590D;&#x5236;&#x51FA;&#x6765;&#xFF0C;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x5355;&#x72EC;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x5B50;&#x67E5;&#x8BE2;&#x4E0E;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x5BF9;&#x4E8E;sql&#x8BED;&#x53E5;2&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5B50;&#x67E5;&#x8BE2;&#x5355;&#x72EC;&#x590D;&#x5236;&#x51FA;&#x6765;&#xFF0C;&#x5C31;&#x65E0;&#x6CD5;&#x5355;&#x72EC;&#x6267;&#x884C;&#x4E86;&#xFF0C;&#x7531;&#x4E8E;sql&#x8BED;&#x53E5;2&#x7684;&#x5B50;&#x67E5;&#x8BE2;&#x4F9D;&#x8D56;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x7684;&#x67D0;&#x4E9B;&#x5B57;&#x6BB5;&#xFF0C;&#x8FD9;&#x5C31;&#x5BFC;&#x81F4;&#x5B50;&#x67E5;&#x8BE2;&#x5C31;&#x4F9D;&#x8D56;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#xFF0C;&#x5C31;&#x4EA7;&#x751F;&#x4E86;&#x76F8;&#x5173;&#x6027;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x5BF9;&#x4E8E;&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x8003;&#x8651;&#x5230;&#x6548;&#x7387;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x4E00;&#x4E2A;select&#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0;&#x4E0A;explain&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x7528;&#x6765;&#x67E5;&#x770B;&#x67E5;&#x8BE2;&#x7C7B;&#x578B;&#xFF0C;&#x67E5;&#x8BE2;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x7D22;&#x5F15;&#x4EE5;&#x53CA;&#x5176;&#x5B83;&#x7B49;&#x7B49;&#x4FE1;&#x606F;&#x3002;&#x6BD4;&#x5982;&#x8FD9;&#x4E48;&#x7528;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`explain ``select` `order_id``  ``from` `table2``  ``where` `customer_id ``in``            ``(``select` `customer_id``            ``from` `table1``            ``where` `city=``&apos;hangzhou&apos;``);`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;&#x4F7F;&#x7528;&#x72EC;&#x7ACB;&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;&#x679C;&#x5B50;&#x67E5;&#x8BE2;&#x90E8;&#x5206;&#x5BF9;&#x96C6;&#x5408;&#x7684;&#x6700;&#x5927;&#x904D;&#x5386;&#x6B21;&#x6570;&#x4E3A;n&#xFF0C;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x7684;&#x6700;&#x5927;&#x904D;&#x5386;&#x6B21;&#x6570;&#x4E3A;m&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BB0;&#x4E3A;&#xFF1A;O(m+n)&#x3002;&#x800C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x5B83;&#x7684;&#x904D;&#x5386; &#x6B21;&#x6570;&#x53EF;&#x80FD;&#x4F1A;&#x8FBE;&#x5230;O(m+m*n)&#x3002;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6548;&#x7387;&#x5C31;&#x4F1A;&#x6210;&#x500D;&#x7684;&#x4E0B;&#x964D;&#xFF1B;&#x6240;&#x4EE5;&#xFF0C;&#x5927;&#x4F19;&#x5728;&#x4F7F;&#x7528;&#x5B50;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x8003;&#x8651;&#x5230;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x76F8;&#x5173;&#x6027;&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>8.&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;</strong></p>
+<p>&#x3000;&#x3000;&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;&#x662F;&#x6307;&#x5F15;&#x7528;&#x4E86;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x5217;&#x7684;&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x5373;&#x5B50;&#x67E5;&#x8BE2;&#x4F1A;&#x5BF9;&#x5916;&#x90E8;&#x67E5;&#x8BE2;&#x7684;&#x6BCF;&#x884C;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x8BA1;&#x7B97;&#x3002;&#x4F46;&#x662F;&#x5728;MySQL&#x7684;&#x5185;&#x90E8;&#xFF0C;&#x4F1A;&#x8FDB;&#x884C;&#x52A8;&#x6001;&#x4F18;&#x5316;&#xFF0C;&#x4F1A;&#x968F;&#x7740;&#x60C5;&#x51B5;&#x7684;&#x4E0D;&#x540C;&#x4F1A; &#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;&#x4F7F;&#x7528;&#x76F8;&#x5173;&#x5B50;&#x67E5;&#x8BE2;&#x662F;&#x6700;&#x5BB9;&#x6613;&#x51FA;&#x73B0;&#x6027;&#x80FD;&#x7684;&#x5730;&#x65B9;&#x3002;&#x800C;&#x5173;&#x4E8E;sql&#x8BED;&#x53E5;&#x7684;&#x4F18;&#x5316;&#xFF0C;&#x8FD9;&#x53C8;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5927;&#x7684;&#x8BDD;&#x9898;&#x4E86;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x5B9E;&#x9645;&#x7684;&#x7ECF;&#x9A8C;&#x79EF;&#x7D2F;&#xFF0C;&#x624D;&#x80FD;&#x66F4;&#x597D;&#x7684;&#x53BB;&#x7406;&#x89E3;&#x5982;&#x4F55;&#x8FDB; &#x884C;&#x4F18;&#x5316;&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>9.EXISTS&#x8C13;&#x8BCD;</strong></p>
+<p>&#x3000;&#x3000;EXISTS&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x725B;&#x53C9;&#x7684;&#x8C13;&#x8BCD;&#xFF0C;&#x5B83;&#x5141;&#x8BB8;&#x6570;&#x636E;&#x5E93;&#x9AD8;&#x6548;&#x5730;&#x68C0;&#x67E5;&#x6307;&#x5B9A;&#x67E5;&#x8BE2;&#x662F;&#x5426;&#x4EA7;&#x751F;&#x67D0;&#x4E9B;&#x884C;&#x3002;&#x6839;&#x636E;&#x5B50;&#x67E5;&#x8BE2;&#x662F;&#x5426;&#x8FD4;&#x56DE;&#x884C;&#xFF0C;&#x8BE5;&#x8C13;&#x8BCD;&#x8FD4;&#x56DE;TRUE&#x6216;FALSE&#x3002;&#x4E0E;&#x5176; &#x5B83;&#x8C13;&#x8BCD;&#x548C;&#x903B;&#x8F91;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x65E0;&#x8BBA;&#x8F93;&#x5165;&#x5B50;&#x67E5;&#x8BE2;&#x662F;&#x5426;&#x8FD4;&#x56DE;&#x884C;&#xFF0C;EXISTS&#x90FD;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;UNKNOWN&#xFF0C;&#x5BF9;&#x4E8E;EXISTS&#x6765;&#x8BF4;&#xFF0C;UNKNOWN&#x5C31;&#x662F;FALSE&#x3002; &#x8FD8;&#x662F;&#x4E0A;&#x9762;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x83B7;&#x5F97;&#x57CE;&#x5E02;&#x4E3A;hangzhou&#xFF0C;&#x5E76;&#x4E14;&#x5B58;&#x5728;&#x8BA2;&#x5355;&#x7684;&#x7528;&#x6237;&#x3002;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`select` `*``from` `table1``where` `city=``&apos;hangzhou&apos;` `and exists``                ``(``select` `*``                ``from` `table2``                ``where` `table1.customer_id=table2.customer_id);`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;</p>
+<p>&#x3000;&#x3000;&#x5173;&#x4E8E;IN&#x548C;EXISTS&#x7684;&#x4E3B;&#x8981;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x4E09;&#x503C;&#x903B;&#x8F91;&#x7684;&#x5224;&#x65AD;&#x4E0A;&#x3002;EXISTS&#x603B;&#x662F;&#x8FD4;&#x56DE;TRUE&#x6216;FALSE&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;IN&#xFF0C;&#x9664;&#x4E86;TRUE&#x3001;FALSE&#x503C;&#x5916;&#xFF0C; &#x8FD8;&#x6709;&#x53EF;&#x80FD;&#x5BF9;NULL&#x503C;&#x8FD4;&#x56DE;UNKNOWN&#x3002;&#x4F46;&#x662F;&#x5728;&#x8FC7;&#x6EE4;&#x5668;&#x4E2D;&#xFF0C;UNKNOWN&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x4E0E;FALSE&#x76F8;&#x540C;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x7528;IN&#x4E0E;&#x4F7F;&#x7528;EXISTS&#x4E00;&#x6837;&#xFF0C;SQL&#x4F18;&#x5316; &#x5668;&#x4F1A;&#x9009;&#x62E9;&#x76F8;&#x540C;&#x7684;&#x6267;&#x884C;&#x8BA1;&#x5212;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x8BF4;&#x5230;&#x4E86;IN&#x548C;EXISTS&#x51E0;&#x4E4E;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x8BF4;&#x5230;NOT IN&#x548C;NOT EXISTS&#xFF0C;&#x5BF9;&#x4E8E;&#x8F93;&#x5165;&#x5217;&#x8868;&#x4E2D;&#x5305;&#x542B;NULL&#x503C;&#x65F6;&#xFF0C;NOT EXISTS&#x548C;NOT IN&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x5C31;&#x8868;&#x73B0;&#x7684;&#x975E;&#x5E38;&#x5927;&#x4E86;&#x3002;&#x8F93;&#x5165;&#x5217;&#x8868;&#x5305;&#x542B;NULL&#x503C;&#x65F6;&#xFF0C;IN&#x603B;&#x662F;&#x8FD4;&#x56DE;TRUE&#x548C;UNKNOWN&#xFF0C;&#x56E0;&#x6B64;NOT IN&#x5C31;&#x4F1A;&#x5F97;&#x5230;NOT TRUE&#x548C;NOT UNKNOWN&#xFF0C;&#x5373;FALSE&#x548C;UNKNOWN&#x3002;</p>
+<p>&#x3000;&#x3000;<strong>10. &#x6D3E;&#x751F;&#x8868;</strong></p>
+<p>&#x3000;&#x3000;&#x4E0A;&#x9762;&#x4E5F;&#x8BF4;&#x5230;&#x4E86;&#xFF0C;&#x5728;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x503C;&#x4E2D;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x5C06;&#x5B50;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x865A;&#x62DF;&#x8868;&#x518D;&#x6B21;&#x4F5C;&#x4E3A;FROM&#x5B50;&#x53E5;&#x7684;&#x8F93;&#x5165;&#x65F6;&#xFF0C;&#x8FD9;&#x5C31;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x865A;&#x62DF;&#x8868;&#x5C31;&#x6210;&#x4E3A;&#x4E86;&#x4E00;&#x4E2A;&#x6D3E;&#x751F;&#x8868;&#x3002;&#x8BED;&#x6CD5;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`FROM (subquery expression) AS derived_table_alias`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;&#x7531;&#x4E8E;&#x6D3E;&#x751F;&#x8868;&#x662F;&#x5B8C;&#x5168;&#x7684;&#x865A;&#x62DF;&#x8868;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x4E5F;&#x4E0D;&#x53EF;&#x80FD;&#x88AB;&#x7269;&#x7406;&#x5730;&#x5177;&#x4F53;&#x5316;&#x3002;</p>
+<h3 id="&#x56DB;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;"><a href="#&#x56DB;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;" class="headerlink" title="&#x56DB;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;"></a>&#x56DB;&#x3001;&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;</h3><p>&#x3000;&#x3000;&#x5F88;&#x591A;&#x67E5;&#x8BE2;&#x4E2D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5B50;&#x67E5;&#x8BE2;&#x3002;&#x4F7F;&#x7528;&#x5B50;&#x67E5;&#x8BE2;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x6027;&#x7684;&#x5B8C;&#x6210;&#x5F88;&#x591A;&#x903B;&#x8F91;&#x4E0A;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x6B65;&#x9AA4;&#x624D;&#x80FD;&#x5B8C;&#x6210;&#x7684;SQL&#x64CD;&#x4F5C;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x4E8B;&#x52A1;&#x6216;&#x8005;&#x8868;&#x9501;&#x6B7B;&#x3002;&#x5B50;&#x67E5;&#x8BE2;&#x53EF;&#x4EE5;&#x4F7F;&#x67E5;&#x8BE2;&#x8BED; &#x53E5;&#x5F88;&#x7075;&#x6D3B;&#xFF0C;&#x4F46;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x6267;&#x884C;&#x6548;&#x7387;&#x4E0D;&#x9AD8;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x5B50;&#x67E5;&#x8BE2;&#x65F6;&#xFF0C;MySQL&#x9700;&#x8981;&#x4E3A;&#x5185;&#x5C42;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x7684;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x8868;&#x3002;&#x7136;&#x540E;&#x5916;&#x5C42;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x518D;&#x4E34;&#x65F6;&#x8868;&#x4E2D;&#x67E5;&#x8BE2;&#x8BB0;&#x5F55;&#x3002;&#x67E5;&#x8BE2;&#x5B8C;&#x6BD5; &#x540E;&#xFF0C;MySQL&#x9700;&#x8981;&#x64A4;&#x9500;&#x8FD9;&#x4E9B;&#x4E34;&#x65F6;&#x8868;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5B50;&#x67E5;&#x8BE2;&#x7684;&#x901F;&#x5EA6;&#x4F1A;&#x53D7;&#x5230;&#x4E00;&#x5B9A;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x5982;&#x679C;&#x67E5;&#x8BE2;&#x7684;&#x6570;&#x636E;&#x91CF;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x8FD9;&#x79CD;&#x5F71;&#x54CD;&#x5C31;&#x4F1A;&#x968F;&#x4E4B;&#x589E;&#x5927;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x5728;MySQL&#x4E2D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;&#x67E5; &#x8BE2;&#x6765;&#x66FF;&#x4EE3;&#x5B50;&#x67E5;&#x8BE2;&#x3002;&#x8FDE;&#x63A5;&#x67E5;&#x8BE2;&#x4E0D;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x4E34;&#x65F6;&#x8868;&#xFF0C;&#x5176;&#x901F;&#x5EA6;&#x6BD4;&#x5B50;&#x67E5;&#x8BE2;&#x8981;&#x5FEB;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x3000;&#x3000;&#x4F7F;&#x7528;&#x8FDE;&#x63A5;(JOIN)&#x6765;&#x4EE3;&#x66FF;&#x5B50;&#x67E5;&#x8BE2;<br>&#x3000;&#x3000;&#x3000;&#x3000;&#x5982;&#xFF1A; &#x3000;&#x3000;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`&#x4F8B;&#x5B50;1&#xFF1A;``SELECT * FROM t1``WHERE t1.a1 NOT ``in` `(SELECT a2 FROM t2 )``&#x4F18;&#x5316;&#x540E;&#xFF1A;``SELECT * FROM t1``LEFT JOIN t2 ON t1.a1=t2.a2``WHERE t2.a2 IS NULL  `</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`&#x4F8B;&#x5B50;2&#xFF1A;``SELECT * FROM article WHERE (title,content,uid) IN (SELECT title,content,uid FROM blog)``&#x4F18;&#x5316;&#x540E;&#xFF1A;``SELECT * FROM article``inner ``join` `blog``on` `(article.title=blog.title AND article.content=blog.content AND article.uid=blog.uid)`</span><br></pre></td></tr></table></figure>
+
+<p> &#x3000;&#x3000;&#x4E0D;&#x80FD;&#x4F18;&#x5316;&#x7684;&#x5B50;&#x67E5;&#x8BE2;&#xFF1A;<br>&#x3000;&#x3000;1&#x3001;mysql&#x4E0D;&#x652F;&#x6301;&#x5B50;&#x67E5;&#x8BE2;&#x5408;&#x5E76;&#x548C;&#x805A;&#x5408;&#x51FD;&#x6570;&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF0C;mariadb&#x5BF9;&#x805A;&#x5408;&#x51FD;&#x6570;&#x5B50;&#x67E5;&#x8BE2;&#x8FDB;&#x884C;&#x7269;&#x5316;&#x4F18;&#x5316;&#xFF1B;<br>&#x3000;&#x3000;2&#x3001;mysql&#x4E0D;&#x652F;&#x6301;from&#x5B50;&#x53E5;&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF0C;mariadb&#x5BF9;from&#x5B50;&#x53E5;&#x5B50;&#x67E5;&#x8BE2;&#x8FDB;&#x884C;&#x5B50;&#x67E5;&#x8BE2;&#x4E0A;&#x62C9;&#x4F18;&#x5316;&#xFF1B;<br>&#x3000;&#x3000;3&#x3001;mysql&#x548C;mariadb&#x5BF9;&#x5B50;&#x67E5;&#x8BE2;&#x5C55;&#x5F00;&#x63D0;&#x4F9B;&#x6709;&#x9650;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x5982;&#x5BF9;&#x4E3B;&#x952E;&#x7684;&#x64CD;&#x4F5C;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x4E0A;&#x62C9;&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF1B;<br>&#x3000;&#x3000;4&#x3001;mysql&#x4E0D;&#x652F;&#x6301;exists&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF0C;mariadb&#x5BF9;exists&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x8FDB;&#x884C;&#x534A;&#x8FDE;&#x63A5;&#x4F18;&#x5316;&#xFF0C;&#x5BF9;exists&#x975E;&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x6CA1;&#x6709;&#x8FDB;&#x4E00;&#x6B65;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF1B;<br>&#x3000;&#x3000;5&#x3001;mysql&#x548C;mariadb&#x4E0D;&#x652F;&#x6301;not exists&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF1B;<br>&#x3000;&#x3000;6&#x3001;mysql&#x548C;mariadb&#x5BF9;in&#x5B50;&#x67E5;&#x8BE2;&#xFF0C;&#x5BF9;&#x6EE1;&#x8DB3;&#x534A;&#x8FDE;&#x63A5;&#x8BED;&#x4E49;&#x7684;&#x67E5;&#x8BE2;&#x8FDB;&#x884C;&#x534A;&#x8FDE;&#x63A5;&#x4F18;&#x5316;&#xFF0C;&#x518D;&#x57FA;&#x4E8E;&#x4EE3;&#x4EF7;&#x8BC4;&#x4F30;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x4E24;&#x8005;&#x5BF9;&#x534A;&#x8FDE;&#x63A5;&#x7684;&#x4EE3;&#x4EF7;&#x8BC4;&#x4F30;&#x9009;&#x62E9;&#x65B9;&#x5F0F;&#x6709;&#x5DEE;&#x5F02;&#xFF1B;<br>&#x3000;&#x3000;7&#x3001;mysql&#x4E0D;&#x652F;&#x6301;not in&#x5B50;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF0C;mariadb&#x5BF9;&#x975E;&#x5173;&#x8054;not in&#x5B50;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;&#x7269;&#x5316;&#x4F18;&#x5316;&#xFF0C;&#x5BF9;&#x5173;&#x8054;not in&#x5B50;&#x67E5;&#x8BE2;&#x4E0D;&#x505A;&#x4F18;&#x5316;&#xFF1B;<br>&#x3000;&#x3000;8&#x3001;mysql&#x548C;mariadb&#x5BF9;&gt;all&#x975E;&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;max&#x51FD;&#x6570;&#xFF0C;&lt;all&#x975E;&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;min&#x51FD;&#x6570;&#xFF0C;&#x5BF9;=all&#x548C;&#x975E;&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;exists&#x4F18;&#x5316;&#xFF1B;<br>&#x3000;&#x3000;9&#x3001;&#x5BF9;&gt;some&#x548C;&gt;any&#x975E;&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;min&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&lt;some&#x548C;&lt;any&#x975E;&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;max&#x51FD;&#x6570;&#xFF0C;=any &#x548C;=some&#x5B50;&#x67E5;&#x8BE2;&#x4F7F;&#x7528;&#x534A;&#x8FDE;&#x63A5;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x5BF9;&gt;some&#x548C;&gt;any&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x4EE5;&#x53CA;&lt;some&#x548C;&lt;any&#x5173;&#x8054;&#x5B50;&#x67E5;&#x8BE2;&#x53EA;&#x6709;exists &#x4F18;&#x5316;&#x3002;</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>打赏即鼓励<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/AliPay_1.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/uploads/WecatPay_1.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -196,226 +347,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/27/MYSQL数据库之子查询/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/17/MYSQL操作表中数据之增删改查/" class="archive-article-date">
-  	<time datetime="2019-10-17T04:50:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/03/三层架构和MVC模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">三层架构和MVC模式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/17/MYSQL操作表中数据之增删改查/">MYSQL操作表中数据之增删改查</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MYSQL</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、子查询定义"><span class="toc-number">1.</span> <span class="toc-text">一、子查询定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、子查询分类"><span class="toc-number">2.</span> <span class="toc-text">二、子查询分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、字查询例举"><span class="toc-number">3.</span> <span class="toc-text">三、字查询例举</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、子查询优化"><span class="toc-number">4.</span> <span class="toc-text">四、子查询优化</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/15/文章插入图片详解/" class="archive-article-date">
-  	<time datetime="2019-10-15T11:20:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/15/文章插入图片详解/">文章插入图片详解</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">插入图片</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/15/hexo中添加图片/" class="archive-article-date">
-  	<time datetime="2019-10-15T07:49:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/15/hexo中添加图片/">hexo中添加图片</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">插入图片</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/10/发布博客内容/" class="archive-article-date">
-  	<time datetime="2019-10-10T15:24:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/10/发布博客内容/">发布博客内容</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2019/10/10/hexo搭建个人博客/" class="archive-article-date">
-  	<time datetime="2019-10-10T14:09:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/10/hexo搭建个人博客/">使用hexo搭建个人博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -468,8 +512,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
